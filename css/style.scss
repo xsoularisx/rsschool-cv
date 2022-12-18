@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 auto;
+  font-family: 'Poppins';
+}
+
+.container {
+  width: 100%;
+  max-width: 1366px;
+}
+
+.side__left {
+  width: calc(100%/3);
+  background-color: #2D2F31;
+  color: #FFFFFF;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.side__right {
+  width: calc(100%/3*2);
+  background-color: #FFFFFF;
+  color: #2D2F31;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+
+  &__photo {
+    margin: 0;
+    padding: 0;
+  }
+
+  &__name {
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 80px;
+    color: #2D2F31;
+    margin-top: 95px;
+    margin-bottom: 40px;
+
+    & span {
+      font-weight: 600;
+    }
+  }
+
+  &__profession {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 24px;
+    color: #2D2F31;
+    background: #EBEBEB;
+  }
+}
+
+.photo {
+  width: 100%;
+  height: 500px;
+  object-fit: none;
+}
+
+.main {
+  width: 100%;
+  display: flex;
+}
+
+
+.info {
+  margin-top: 60px;
+
+  &__title {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 26px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 26px;
+
+    & span {
+      font-weight: 400;
+      color: #EBEBEB;
+      padding: 20px;
+    }
+  }
+
+  &__list {
+    padding-left: 20px;
+    list-style-type: none;
+
+    & li::before {
+      content: '_';
+    }
+  }
+
+  &__code {
+    font-family: 'Inconsolata';
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: #FFFFFF;
+
+    &:active {
+      color: #EBEBEB;
+    }
+  }
+}
+
+.footer {
+  padding: 20px;
+  background-color: #2D2F31;
+  color: #FFFFFF;
+
+  &__list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+
+    & li {
+      font-weight: 600;
+      font-size: 30px;
+      line-height: 26px;
+      letter-spacing: 3px;
+      align-self: baseline;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: #FFFFFF;
+
+    & svg {
+      height: 40px;
+      fill: white;
+    }
+
+    &:active {
+      color: #EBEBEB;
+
+      & svg {
+        fill: #EBEBEB;
+      }
+    }
+  }
+}
